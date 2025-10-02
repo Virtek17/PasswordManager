@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: Evolventa;
+  src: url("../../public/Evolventa-Bold.woff2");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: Evolventa;
+  src: url("../../public/Evolventa-Regular.woff2");
+  font-weight: normal;
+}
+
+:root {
+  --background: #2e2e2e;
+  --foreground: #ffffff;
+  --primary: #7e52ff;
+  --accent: #b9e919;
+  --secondary: #717372;
+  --card-bg: #373737;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: "Evolventa";
+  font-weight: normal;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: bold;
+}
+
+/* Custom scrollbar for webkit browsers */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(55, 55, 55, 0.3);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(126, 82, 255, 0.5);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(126, 82, 255, 0.7);
+}
